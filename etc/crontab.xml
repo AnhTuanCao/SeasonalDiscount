@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="default">
+        <job name="magenest_auto_update_sale_day" instance="Magenest\SeasonalDiscount\Cron\AutoUpdateSaleDay" method="execute">
+            <schedule>* * * 1 *</schedule>
+        </job>
+        <job name="magenest_auto_update_sale_day_catalog_rule" instance="Magenest\SeasonalDiscount\Cron\CatalogRulesAutoUpdateSaleDay" method="execute">
+            <schedule>* * * 1 *</schedule>
+        </job>
+    </group>
+</config>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="salesrule" resource="sales" engine="innodb" comment="Sales Order">
+        <column xsi:type="text" name="sale_day" nullable="true"  comment="Sale Day"/>
+    </table>
+    <table name="catalogrule">
+        <column xsi:type="text" name="sale_day" nullable="true"  comment="Sale Day"/>
+    </table>
+</schema>
